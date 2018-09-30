@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +29,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void ButtonClick(View view){
+
+        EditText et1= (EditText) findViewById(R.id.Myemail);
+        EditText et2= (EditText) findViewById(R.id.Mypassword);
+
+        String email= et1.getText().toString();
+        String pass= et2.getText().toString();
+
+        String authmail="admin";
+        String authpass="admin";
+
+        if (email.equals(authmail) && pass.equals(authpass)){
+
+
+        }
+        else {
+
+            Toast toast = Toast.makeText(this,"Invalid Email/Pass",Toast.LENGTH_LONG);
+            toast.show();
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
