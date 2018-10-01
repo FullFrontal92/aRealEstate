@@ -26,7 +26,8 @@
         <activity
             android:name=".Gallery"
             android:label="@string/title_activity_gallery"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ContactUs"></activity>
     </application>
 
 </manifest>

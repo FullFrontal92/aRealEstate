@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/view_gallery"
-            android:title="Import" />
+            android:title="View Gallery" />
         <item
             android:id="@+id/our_locations"
             android:title="Gallery" />
